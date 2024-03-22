@@ -1,6 +1,6 @@
 /* Hide sidebar btn when screen larger than small landscape */
 @media screen and (orientation: landscape) and (min-width: 1000.1px) {
-    .menu-btn {
+    #menu-btn {
         display: none;
     }
 }
@@ -12,7 +12,7 @@ screen and (orientation: portrait) {
         display: none;
     }
 
-    .menu-btn {
+    #menu-btn {
         height: 40px;
     }
 

@@ -42,6 +42,7 @@ body {
 a {
     transition: 0.2s;
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -107,11 +108,17 @@ a:hover {
     font-style: normal;
     font-weight: bold;
     padding: 0px 50px;
-    cursor: pointer;
     color: #5A5A5A;
     font-size: 26px;
     background-color: transparent;
     border-color: transparent;
+}
+
+#menu-btn {
+    height: 35px;
+    width: 35px;
+    margin: 0 auto;
+    display: block;
 }
 
 main {
@@ -139,7 +146,8 @@ main p {
 #loadout-container-2,
 #loadout-container-3,
 #demos-container-1,
-#demos-container-2 {
+#demos-container-2,
+#contact-container {
     justify-content: center;
 }
 
@@ -165,10 +173,18 @@ main p {
 
 .content-text {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 50px 20px 50px;
-    
+}
+
+.content-row {
+    flex-direction: row;
+}
+
+.row {
+    flex-direction: row;
 }
 
 .audio-content {
@@ -240,6 +256,15 @@ main p {
     width: 
 } */
 
+#contact-row {
+    width: 100%;
+}
+
+#email-icon {
+    height: auto;
+    max-width: 40px;
+}
+
 footer {
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
@@ -250,6 +275,15 @@ footer {
     text-align: left;
     padding: 5px 0;
     border-top: 1px solid #c9c9c9;
+}
+
+#email-text > p {
+    font-size: 20px;
+    margin: 0;
+}
+
+#email-text {
+    padding: 0px 20px;
 }
 
 footer h3 {

@@ -23,8 +23,8 @@
 </head>
 <body>
     <nav id="sidebar" class="sidebar ignoreSidebarToggle">
-        <a href="javascript:void(0)" class="closebtn btn" onclick="closeNav()">&times;</a>
-        <hr>
+        <!-- <a href="javascript:void(0)" class="closebtn btn" onclick="closeNav()">&times;</a> -->
+        <!-- <hr> -->
         <a class="btn" href="#about">About</a>
         <hr>
         <a class="btn" href="#loadout">Loadout</a>
@@ -43,20 +43,20 @@
             <a class="nav-btn btn" href="#loadout">Loadout</a>
             <a class="nav-btn btn" href="#demos">Demos</a>
             <a class="nav-btn btn" href="#contacts">Contacts</a>
-            <!-- <svg id="menu-btn btn" class="menu-btn openbtn btn hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+            <svg id="menu-btn" class="menu-btn openbtn btn ignoreSidebarToggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#5A5A5A" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
                 <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
                   <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
                   <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
                 </path>
                 <rect width="10" height="10" stroke="none">
-                  <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                  <animate dur="2s" id="reverse" attributeName="width" begin=beginElement() />
                 </rect>
                 <rect width="10" height="10" stroke="none">
-                  <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                  <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="" />
                   <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
                 </rect>
-              </svg> -->
-            <img id="menu-btn" class="menu-btn openbtn btn ignoreSidebarToggle" src="https://images2.imgbox.com/bd/f6/3xH4LDLf_o.png" alt="Menu button">
+            </svg>
+            <!-- <img id="menu-btn" class="menu-btn openbtn btn ignoreSidebarToggle" src="https://images2.imgbox.com/bd/f6/3xH4LDLf_o.png" alt="Menu button"> -->
         </div>
     </div>
 
@@ -109,7 +109,7 @@
             </div>
             <hr width="5%"><br>
             <div id="loadout-container-3">
-                <div class="content-text" id="other-text">
+                <div class="content-text">
                     <p>Besides those 2 tools, I also use some other ones like Adobe Photoshop to edit song artworks (and images for this webpage <b>:D</b>)</p>    
                 </div>
             </div>
@@ -174,7 +174,19 @@
             <span id="contacts" class="offset-anchor"></span>
             <h1>Contacts</h1>
             <hr width="3%">
-            <p>Coming Soon!</p>
+            <div id="contact-container">
+                <!-- <div id="contact-links" class="content-text">
+                    <p>Wants to enquire about something? Reach me here!</p>
+                    <div class="contact-row content-text row">
+                        <a href="mailto:legendaryjohn2005+music@gmail.com"><img id="email-icon" class="btn" src="assets/email-icon.webp"></a>
+                        <a id="email-text" class="nav-btn" href="mailto:legendaryjohn2005+music@gmail.com"><p>1k0pQ@example.com</p></a>
+                    </div>
+                </div>
+                <div id="social-links" class="content-text">
+                    <p>My social media links</p>
+                </div> -->
+                <p>Coming Soon...</p>
+            </div>
         </div>
     </main>
 

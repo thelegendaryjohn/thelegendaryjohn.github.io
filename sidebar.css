@@ -11,7 +11,7 @@
     background-blend-mode:screen;
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
+    padding-top: 10px;
 }
   
 .sidebar a {
@@ -43,9 +43,10 @@
 }
 
 .openbtn:hover {
-    background-color: rgba(200, 200, 200, 0.3);
+    stroke: rgba(90, 90, 90, 0.7);
 }
 
 .toggleSidebar {
     width: 190px;
 }
+
