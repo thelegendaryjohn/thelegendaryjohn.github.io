@@ -1,3 +1,8 @@
+:root {
+    --custom-blue: #34d9f3;
+    --custom-cyan: #38c6fe;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,7 +63,7 @@ a:hover {
 #avatar {
     height: 100%;
     width: 400px;
-    border: #34d9f3 4px solid;
+    border: var(--custom-blue) 4px solid;
     border-radius: 20px;
     transition: 0.2s;
 }
@@ -66,12 +71,11 @@ a:hover {
 #avatar-text-container {
     display: flex;
     justify-content: center;
-    
     padding-left: 50px;
 }
 
 #avatar-text > h1a {
-    color: #34d9f3;
+    color: var(--custom-blue);
     font-size: 26px;
 }
 
@@ -102,7 +106,6 @@ a:hover {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: bold;
-
     padding: 0px 50px;
     cursor: pointer;
     color: #5A5A5A;
@@ -118,7 +121,7 @@ main {
 
 main h1 {
     font-size: 36px;
-    color: #38c6fe;
+    color: var(--custom-cyan);
 }
 
 main p {
@@ -180,7 +183,7 @@ main p {
     max-width: 560px;
     align-items: center;
     justify-content: center;
-    border: #38c6fe 2px solid;
+    border: var(--custom-cyan) 2px solid;
     border-radius: 27px;
     background-color: #f1f3f4;
     overflow: hidden;
@@ -219,7 +222,7 @@ main p {
 
 #audio-img-1,
 #audio-img-2 {
-    border: #38c6fe 2px solid;
+    border: var(--custom-cyan) 2px solid;
     border-radius: 10px;
 }
 
@@ -243,7 +246,7 @@ footer {
     font-style: normal;
 
     background-color: rgb(245, 245, 245);
-    color: #38c6fe;
+    color: var(--custom-cyan);
     text-align: left;
     padding: 5px 0;
     border-top: 1px solid #c9c9c9;

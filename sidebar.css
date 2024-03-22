@@ -45,3 +45,7 @@
 .openbtn:hover {
     background-color: rgba(200, 200, 200, 0.3);
 }
+
+.toggleSidebar {
+    width: 190px;
+}
