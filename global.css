@@ -4,13 +4,12 @@
 }
 
 html {
+    transition: 0.2s;
     scroll-behavior: smooth;
 }
 
 .development-feature {
     position: fixed;
-    bottom: -10px;
-    right: 10px;
     width: fit-content;
     padding-left: 5px;
     padding-right: 5px;
@@ -22,12 +21,26 @@ html {
     font-weight: bold;
 }
 
+#screen-size {
+    bottom: -10px;
+    right: 10px;
+}
+
+#user-agent {
+    bottom: 12px;
+    right: 10px;
+}
+
 .hidden {
     display: none;
 }
 
 #header-logo {
     height: 90px;
+}
+
+.transition {
+    transition: 0.2s;
 }
 
 body {
@@ -183,10 +196,6 @@ main p {
     flex-direction: row;
 }
 
-.row {
-    flex-direction: row;
-}
-
 .audio-content {
     display: flex;
     flex-direction: row;
@@ -256,13 +265,69 @@ main p {
     width: 
 } */
 
-#contact-row {
-    width: 100%;
+.contacts {
+    padding-top: 100px;
 }
 
-#email-icon {
+.contact-row {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px 20px 50px;
+}
+
+.line {
+    display: inline;
+}
+
+.contact-icon {
     height: auto;
     max-width: 40px;
+}
+
+.contact-text {
+    padding: 0px 15px;
+    font-size: 20px;
+    margin: 0;
+    width: fit-content;
+    text-align: left;
+}
+
+.contact-div {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    width: min-content;
+}
+
+#contact-links,
+#social-links {
+    width: 50%;
+}
+
+#email-text {
+    color: #fa2424;
+}
+
+#email-text:hover {
+    color: #fa242488;
+}
+
+#discord-text {
+    color: #637cd7;
+}
+
+#discord-text:hover {
+    color: #637cd788;
+}
+
+.vl {
+    border-left: 2px solid #c9c9c9;
+    height: 200px;
+    left: 50%;
+    margin-top: 40px;
+    top: 0;
 }
 
 footer {
@@ -275,15 +340,6 @@ footer {
     text-align: left;
     padding: 5px 0;
     border-top: 1px solid #c9c9c9;
-}
-
-#email-text > p {
-    font-size: 20px;
-    margin: 0;
-}
-
-#email-text {
-    padding: 0px 20px;
 }
 
 footer h3 {
@@ -325,4 +381,14 @@ span.offset-anchor {
     position: relative;
     top: -120px;
     visibility: hidden;
+}
+
+/* Custom vertical rule */
+.vr {
+    border-left: 2px solid #c9c9c9;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
