@@ -3,5 +3,5 @@ const copyDiscordHandle = () => {
     navigator.clipboard.writeText("voca_johnni");
   
     // Alert the copied text
-    alert("Copied to clipboard");
+    alert("Handle copied to clipboard. Use \"Add Friends\" function on Discord to add me");
 }

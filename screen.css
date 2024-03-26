@@ -66,8 +66,8 @@ screen and (orientation: portrait) {
         max-width: 480px;
     }
 
-    .line {
-        display: inline-block;
+    .break-line {
+        display: flex;
     }
     
 }
@@ -120,11 +120,15 @@ screen and (orientation: portrait) {
     .contact-icon {
         max-width: 30px;
     }
+
+    .pc {
+        display: none;
+    }
 }
 
 /* Portrait exclusive */
 @media screen and (orientation: portrait) {
-    .development-feature#screen-size::after {
+    .development-feature#screen-size:after {
         content: "Portrait";
     }
 
@@ -186,7 +190,7 @@ screen and (orientation: portrait) {
         font-size: 16px;
     }
     
-    .vl {
+    .vr {
         display: none;
     }
 

@@ -8,6 +8,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="custom-label.css">
+    <link rel="stylesheet" href="custom-flags.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="screen.css">
 
@@ -37,7 +39,7 @@
 
     <div id="header">
         <p class="development-feature hidden" id="screen-size"></p>
-        <!-- <p class="development-feature hidden" id="user-agent"></p> -->
+        
         <img class="img" id="header-logo" src="assets/Header-Logo.webp" alt="logo">
         <div class="header-buttons">
             <a class="nav-btn btn" href="#about">About</a>
@@ -86,7 +88,9 @@
             </div>
         </div>
 
-        <div class="content">
+        <hr>
+
+        <div class="spacer content">
             <span id="loadout" class="offset-anchor"></span>
             <h1>Loadout</h1>
             <hr width="3%">
@@ -116,14 +120,16 @@
             </div>
         </div>
 
-        <div class="content">
+        <hr>
+
+        <div class="spacer content">
             <span id="demos" class="offset-anchor"></span>
             <h1>Demos</h1>
             <hr width="3%">
             <br>
-            <div class="audio-content transition" id="demos-container-1">
+            <div class="audio-content" id="demos-container-1">
                 <div class="content-text">
-                <p><b class="title-name" id="cover-demo-name">Cover Demo</b></p>
+                <p><b class="title-name" id="cover-demo-name">Cover Demo<br><subtitle>&ndash;&nbsp; <b>Centuries</b> by <b>Fall Out Boy</b>  &nbsp;&ndash;</subtitle></b></p>
                 <p>Here's a short demo of one of my cover released on YouTube</p>
             </div>
                 <div class="audio-container">
@@ -146,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="audio-content reverse transition" id="demos-container-2">
+            <div class="audio-content reverse" id="demos-container-2">
                 <div class="audio-container">
                     <div class="audio-info">
                         <div class="audio-img">
@@ -171,18 +177,22 @@
             </div>
         </div>
 
-        <div class="content contacts">
+        <hr>
+        <div class="contacts-spacer"></div>
+        <div class="pc contacts-spacer"></div>
+
+        <div class="spacer content">
             <span id="contacts" class="offset-anchor"></span>
             <h1>Contacts</h1>
             <hr width="3%">
             <div id="contact-container">
                 <div id="contact-links" class="content-text">
                     <p>Wants to enquire about something? Reach me here!</p>
-                    <div class="contact-row">
+                    <div class="contact-column">
                         <a class="contact-div content-row" href="mailto:legendaryjohn2005+music@gmail.com">
                             <img alt="Email logo" id="email-icon" class="contact-icon" src="assets/email-icon.webp">
                             <p id="email-text" class="contact-text nav-btn">
-                                <span class="line">legendaryjohn2005</span><span class="line">+music@gmail.com</span>
+                                <span class="break-line">legendaryjohn2005</span><span class="break-line">+music@gmail.com</span>
                             </p>
                         </a>
                         <div class="contact-div content-row btn" onclick="copyDiscordHandle()">
@@ -190,13 +200,59 @@
                             <p id="discord-text" class="contact-text nav-btn">@voca_johnni</p>
                         </div>
                     </div>
+
+                    <p>My bussiness card <b>(Carrd.co)</b></p>
+                    <div class="contact-column">
+                        <a class="contact-div content-row btn" href="https://johnni-p.carrd.co/" target="_blank">
+                            <img alt="Discord logo" id="carrd-icon" class="contact-icon btn" src="assets/carrd-logo.webp">
+                            <p id="carrd-text" class="contact-text nav-btn">
+                                <span class="no-break-line">johnni-p.carrd.co</span>
+                            </p>
+                        </a>
+                    </div>
                 </div>
-                <div class="vl"></div>
+                <div class="vr"></div>
                 <div id="social-links" class="content-text">
-                    <p>My social media links</p>
+                    <p>My social media and content links</p>
+                    <div class="contact-column">
+                        <a class="contact-div content-row btn" href="https://www.youtube.com/@johnni-p" target="_blank">
+                            <img alt="Discord logo" id="youtube-icon" class="contact-icon btn" src="assets/youtube_logo.webp">
+                            <p id="youtube-text" class="contact-text nav-btn">
+                                <span class="no-break-line">YouTube</span>
+                            </p>
+                        </a>
+                        <a class="contact-div content-row btn" href="https://soundcloud.com/thelegendaryjohn" target="_blank">
+                            <img alt="Discord logo" id="soundcloud-icon" class="contact-icon btn" src="assets/soundcloud-logo.webp">
+                            <p id="soundcloud-text" class="contact-text nav-btn">
+                                <span class="no-break-line">SoundCloud</span>
+                            </p>
+                        </a>
+                        <a class="contact-div content-row btn" href="https://johnni-p.bandcamp.com/" target="_blank">
+                            <img alt="Discord logo" id="bandcamp-icon" class="contact-icon btn" src="assets/bandcamp-logo.webp">
+                            <p id="bandcamp-text" class="contact-text nav-btn">
+                                <span class="no-break-line">Bandcamp</span>
+                            </p>
+                        </a>
+                        <a class="contact-div content-row btn" href="https://twitter.com/voca_johnni" target="_blank">
+                            <img alt="Discord logo" id="x-icon" class="contact-icon btn" src="assets/x-logo.webp">
+                            <p id="x-text" class="contact-text nav-btn">
+                                <span class="no-break-line">X (Twitter)</span>
+                            </p>
+                        </a>
+                        <a class="contact-div content-row btn" href="https://vocadb.net/Ar/114611" target="_blank">
+                            <img alt="Discord logo" id="vocadb-icon" class="contact-icon btn" src="assets/vocadb-logo.webp">
+                            <p id="vocadb-text" class="contact-text nav-btn">
+                                <span class="no-break-line">VocaDB</span>
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="contacts-spacer"></div>
+        <div class="pc contacts-spacer"></div>
+        <div class="pc contacts-spacer"></div>
     </main>
 
     <footer>
