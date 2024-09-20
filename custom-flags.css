@@ -1,29 +1,29 @@
 /* Custom Flags */
 .hidden {
-    display: none;
+	display: none;
 }
 
 .btn {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .content {
-    padding: 0px 0px 50px 0px;
+	padding: 0px 0px 50px 0px;
 }
 
 .break-line {
-    display: inline;
+	display: inline;
 }
 
 .no-break-line {
-    display: flex;
-    width: max-content;
+	display: flex;
+	width: max-content;
 }
 
 .contacts-spacer {
-    padding-top: 100px;
+	padding-top: 100px;
 }
 
 .spacer {
-    padding-top: 50px;
+	padding-top: 50px;
 }

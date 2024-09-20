@@ -1,266 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal webpage of Johnni-P, hosted by GitHub Pages">
-    <title>Johnni-P | Hobbyist Vocal Synth Cover Artist</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Personal webpage of Johnni-P, hosted by GitHub Pages"
+		/>
+		<title>Johnni-P | Hobbyist Vocal Synth Cover Artist</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="custom-label.css">
-    <link rel="stylesheet" href="custom-flags.css">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="screen.css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="global.css" />
+		<link rel="stylesheet" href="custom-label.css" />
+		<link rel="stylesheet" href="custom-flags.css" />
+		<link rel="stylesheet" href="sidebar.css" />
+		<link rel="stylesheet" href="screen.css" />
 
-    <!-- JavaScript -->
-    <script src="sidebar.js" defer></script>
-    <script src="dev-mode-toggle.js" defer></script>
-    <script src="clipboard-copy.js" defer></script>
+		<!-- JavaScript -->
+		<script src="sidebar.js" defer></script>
+		<script src="dev-mode-toggle.js" defer></script>
+		<script src="clipboard-copy.js" defer></script>
 
-    <!-- Title Logo -->
-    <link rel="icon" href="https://images2.imgbox.com/8c/8d/p8TN0xCi_o.png">
+		<!-- Title Logo -->
+		<link rel="icon" href="https://images2.imgbox.com/8c/8d/p8TN0xCi_o.png" />
 
-    <!-- Google Fonts -->
-    <!-- Inter Tight -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+		<!-- Google Fonts -->
+		<!-- Inter Tight -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav id="sidebar" class="sidebar ignoreSidebarToggle">
+			<a class="btn" href="#about">About</a>
+			<hr />
+			<a class="btn" href="#loadout">Loadout</a>
+			<hr />
+			<a class="btn" href="#demos">Demos</a>
+			<hr />
+			<a class="btn" href="#contacts">Contacts</a>
+			<hr />
+		</nav>
 
-</head>
-<body>
-    <nav id="sidebar" class="sidebar ignoreSidebarToggle">
-        <a class="btn" href="#about">About</a>
-        <hr>
-        <a class="btn" href="#loadout">Loadout</a>
-        <hr>
-        <a class="btn" href="#demos">Demos</a>
-        <hr>
-        <a class="btn" href="#contacts">Contacts</a>
-        <hr>
-    </nav>
+		<div id="header">
+			<p class="development-feature hidden" id="screen-size"></p>
 
-    <div id="header">
-        <p class="development-feature hidden" id="screen-size"></p>
-        
-        <img class="img" id="header-logo" src="assets/Header-Logo.webp" alt="logo">
-        <div class="header-buttons">
-            <a class="nav-btn btn" href="#about">About</a>
-            <a class="nav-btn btn" href="#loadout">Loadout</a>
-            <a class="nav-btn btn" href="#demos">Demos</a>
-            <a class="nav-btn btn" href="#contacts">Contacts</a>
-            <svg id="menu-btn" class="menu-btn openbtn btn ignoreSidebarToggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#5A5A5A" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
-                <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-                  <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
-                  <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
-                </path>
-                <rect width="10" height="10" stroke="none">
-                  <animate dur="2s" id="reverse" attributeName="width" begin="" />
-                </rect>
-                <rect width="10" height="10" stroke="none">
-                  <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="" />
-                  <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-                </rect>
-            </svg>
-            <!-- <img id="menu-btn" class="menu-btn openbtn btn ignoreSidebarToggle" src="https://images2.imgbox.com/bd/f6/3xH4LDLf_o.png" alt="Menu button"> -->
-        </div>
-    </div>
+			<img
+				class="img"
+				id="header-logo"
+				src="assets/Header-Logo.webp"
+				alt="logo"
+			/>
+			<div class="header-buttons">
+				<a class="nav-btn btn" href="#about">About</a>
+				<a class="nav-btn btn" href="#loadout">Loadout</a>
+				<a class="nav-btn btn" href="#demos">Demos</a>
+				<a class="nav-btn btn" href="#contacts">Contacts</a>
+				<svg
+					id="menu-btn"
+					class="menu-btn openbtn btn ignoreSidebarToggle"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 10 10"
+					stroke="#5A5A5A"
+					stroke-width=".6"
+					fill="rgba(0,0,0,0)"
+					stroke-linecap="round"
+					style="cursor: pointer"
+				>
+					<path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+						<animate
+							dur="0.2s"
+							attributeName="d"
+							values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+							fill="freeze"
+							begin="start.begin"
+						/>
+						<animate
+							dur="0.2s"
+							attributeName="d"
+							values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+							fill="freeze"
+							begin="reverse.begin"
+						/>
+					</path>
+					<rect width="10" height="10" stroke="none">
+						<animate dur="2s" id="reverse" attributeName="width" begin="" />
+					</rect>
+					<rect width="10" height="10" stroke="none">
+						<animate
+							dur="0.001s"
+							id="start"
+							attributeName="width"
+							values="10;0"
+							fill="freeze"
+							begin=""
+						/>
+						<animate
+							dur="0.001s"
+							attributeName="width"
+							values="0;10"
+							fill="freeze"
+							begin="reverse.begin"
+						/>
+					</rect>
+				</svg>
+				<!-- <img id="menu-btn" class="menu-btn openbtn btn ignoreSidebarToggle" src="https://images2.imgbox.com/bd/f6/3xH4LDLf_o.png" alt="Menu button"> -->
+			</div>
+		</div>
 
-    <main>
-        <div id="avatar-section-container">
-            <img class="img" id="avatar" src="assets/avatar.webp" alt="logo">
-            <div id="avatar-text-container">
-                <div id="avatar-text">
-                    <h1>Johnni-P</h1>
-                    <h1a>Hobbyist Vocal Synth Cover Artist</h1a>
-                </div>
-            </div>
-        </div>
+		<main>
+			<div id="avatar-section-container">
+				<img class="img" id="avatar" src="assets/avatar.webp" alt="logo" />
+				<div id="avatar-text-container">
+					<div id="avatar-text">
+						<h1>Johnni-P</h1>
+						<h1a>Hobbyist Vocal Synth Cover Artist</h1a>
+					</div>
+				</div>
+			</div>
 
-        <div class="content">
-            <span id="about" class="offset-anchor"></span>
-            <h1>About</h1>
-            <hr width="3%">
-            <br>
-            <div id="about-container">
-                <div class="content-text">
-                    <p>I'm <b>Johnni-P</b>, usually known as <b>Johnny</b>, a decently normal guy who likes to cover songs in his free time using the power of voice synthesizing technology because I can't sing... <b>;-;</b></p>
-                    
-                    <p>My goal is to recreate how an original song sounds as closely as possible to my best effort. I sometimes work on other projects as well, like making remix and stuff, related to vocal synth or not</p>
-                </div>
-            </div>
-        </div>
+			<div class="content">
+				<span id="about" class="offset-anchor"></span>
+				<h1>About</h1>
+				<hr width="3%" />
+				<br />
+				<div id="about-container">
+					<div class="content-text">
+						<p>
+							I'm <b>Johnni-P</b>, usually known as <b>Johnny</b>, a decently
+							normal guy who likes to cover songs in his free time using the
+							power of voice synthesizing technology because I can't sing...
+							<b>;-;</b>
+						</p>
 
-        <hr>
+						<p>
+							My goal is to recreate how an original song sounds as closely as
+							possible to my best effort. I sometimes work on other projects as
+							well, like making remix and stuff, related to vocal synth or not
+						</p>
+					</div>
+				</div>
+			</div>
 
-        <div class="spacer content">
-            <span id="loadout" class="offset-anchor"></span>
-            <h1>Loadout</h1>
-            <hr width="3%">
-            <br>
-            <div id="loadout-container-1">
-                <div class="content-text" id="synthv-text">
-                    <p><b class="title-name" id="synthv-name">Synthesizer V Studio Pro<br><subtitle>&ndash;&nbsp; Dreamtonics &nbsp;&ndash;</subtitle></b></p>
-                    <p>Synthesizer V Studio Pro is a modern voice synthesizer powered by AI, with a variety of masculine and feminine voicebanks for different singing styles and languages, trained on professional voice providers all over the world.</p>
-                    <p><i>This is where I create the vocal melodies, fine-tune the pitches, and make the voicebanks sing!</i> 🎙️</p>
-                </div>
-                <img class="content-img" id="synthv-img" src="assets/SynthV-UI.webp" alt="Synthesizer V Studio UI">
-            </div>
+			<hr />
 
-            <div class="reverse" id="loadout-container-2">
-                <img class="content-img" id="FL-img" src="assets/FL-UI.webp" alt="FL Studio UI">
-                <div class="content-text" id="FL-text">
-                    <p><b class="title-name" id="FL-name">FL Studio<br><subtitle>&ndash;&nbsp; Image-Line &nbsp;&ndash;</subtitle></b></p>
-                    <p>FL Studio is a powerful Digital Audio Workstation (DAW) known for its user-friendly UI, used by casuals and professionals alike to create all sorts of wonders with audio</p>
-                    <p><i>This is where I mix the vocals with the instrumental, applying different techniques and effects to achieve the most desirable result</i> 🎛️<i><br>Also where I make my remixes!</i></p>
-                </div>
-            </div>
-            <hr width="5%"><br>
-            <div id="loadout-container-3">
-                <div class="content-text">
-                    <p>Besides those 2 tools, I also use some other ones like Adobe Photoshop to edit song artworks (and images for this webpage <b>:D</b>)</p>    
-                </div>
-            </div>
-        </div>
+			<div class="spacer content">
+				<span id="loadout" class="offset-anchor"></span>
+				<h1>Loadout</h1>
+				<hr width="3%" />
+				<br />
+				<div id="loadout-container-1">
+					<div class="content-text" id="synthv-text">
+						<p>
+							<b class="title-name" id="synthv-name"
+								>Synthesizer V Studio Pro<br /><subtitle
+									>&ndash;&nbsp; Dreamtonics &nbsp;&ndash;</subtitle
+								></b
+							>
+						</p>
+						<p>
+							Synthesizer V Studio Pro is a modern voice synthesizer powered by
+							AI, with a variety of masculine and feminine voicebanks for
+							different singing styles and languages, trained on professional
+							voice providers all over the world.
+						</p>
+						<p>
+							<i
+								>This is where I create the vocal melodies, fine-tune the
+								pitches, and make the voicebanks sing!</i
+							>
+							🎙️
+						</p>
+					</div>
+					<img
+						class="content-img"
+						id="synthv-img"
+						src="assets/SynthV-UI.webp"
+						alt="Synthesizer V Studio UI"
+					/>
+				</div>
 
-        <hr>
+				<div class="reverse" id="loadout-container-2">
+					<img
+						class="content-img"
+						id="FL-img"
+						src="assets/FL-UI.webp"
+						alt="FL Studio UI"
+					/>
+					<div class="content-text" id="FL-text">
+						<p>
+							<b class="title-name" id="FL-name"
+								>FL Studio<br /><subtitle
+									>&ndash;&nbsp; Image-Line &nbsp;&ndash;</subtitle
+								></b
+							>
+						</p>
+						<p>
+							FL Studio is a powerful Digital Audio Workstation (DAW) known for
+							its user-friendly UI, used by casuals and professionals alike to
+							create all sorts of wonders with audio
+						</p>
+						<p>
+							<i
+								>This is where I mix the vocals with the instrumental, applying
+								different techniques and effects to achieve the most desirable
+								result</i
+							>
+							🎛️<i><br />Also where I make my remixes!</i>
+						</p>
+					</div>
+				</div>
+				<hr width="5%" />
+				<br />
+				<div id="loadout-container-3">
+					<div class="content-text">
+						<p>
+							Besides those 2 tools, I also use some other ones like Adobe
+							Photoshop to edit song artworks (and images for this webpage
+							<b>:D</b>)
+						</p>
+					</div>
+				</div>
+			</div>
 
-        <div class="spacer content">
-            <span id="demos" class="offset-anchor"></span>
-            <h1>Demos</h1>
-            <hr width="3%">
-            <br>
-            <div class="audio-content" id="demos-container-1">
-                <div class="content-text">
-                <p><b class="title-name" id="cover-demo-name">Cover Demo<br><subtitle>&ndash;&nbsp; <b>Centuries</b> by <b>Fall Out Boy</b>  &nbsp;&ndash;</subtitle></b></p>
-                <p>Here's one of my cover released on YouTube, which used one of Dreamtonics first-party voicebanks <b>"Ninezero"</b> suitable for rock songs</p>
-            </div>
-                <div class="audio-container">
-                    <div class="audio-info">
-                        <div class="audio-img">
-                            <img id="audio-img-2" src="assets/cover-demo-img.webp" alt="Cover demo image">
-                        </div>
-                        <div class="audio-title">
-                            <p>Fall Out Boy - Centuries (Ninezero Cover)</p>
-                        </div>
-                    </div>
+			<hr />
 
-                    <div class="audio-player">
-                        <!-- <audio class="audio-player-UI" controls crossorigin="anonymous" controlsList="nodownload nofullscreen">
+			<div class="spacer content">
+				<span id="demos" class="offset-anchor"></span>
+				<h1>Demos</h1>
+				<hr width="3%" />
+				<br />
+				<div class="audio-content" id="demos-container-1">
+					<div class="content-text">
+						<p>
+							<b class="title-name" id="cover-demo-name"
+								>Cover Demo<br /><subtitle
+									>&ndash;&nbsp; <b>Centuries</b> by
+									<b>Fall Out Boy</b> &nbsp;&ndash;</subtitle
+								></b
+							>
+						</p>
+						<p>
+							Here's one of my cover released on YouTube, which used one of
+							Dreamtonics first-party voicebanks <b>"Ninezero"</b> suitable for
+							rock songs
+						</p>
+					</div>
+					<div class="audio-container">
+						<div class="audio-info">
+							<div class="audio-img">
+								<img
+									id="audio-img-2"
+									src="assets/cover-demo-img.webp"
+									alt="Cover demo image"
+								/>
+							</div>
+							<div class="audio-title">
+								<p>Fall Out Boy - Centuries (Ninezero Cover)</p>
+							</div>
+						</div>
+
+						<div class="audio-player">
+							<!-- <audio class="audio-player-UI" controls crossorigin="anonymous" controlsList="nodownload nofullscreen">
                             <source src="https://drive.lienuc.com/uc?id=1wjsgJusecGLRXARmGZv-KKv7ELRfEifM">
                           Your browser does not support the audio element.
                         </audio> -->
-                        <iframe class="audio-player-UI" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=1119740991/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://johnni-p.bandcamp.com/track/fall-out-boy-centuries-ninezero-cover">Fall Out Boy - Centuries (Ninezero Cover) by Johnni-P『TLJ』</a></iframe>
-                    </div> 
-                </div>
-            </div>
+							<iframe
+								title="Fall Out Boy - Centuries"
+								class="audio-player-UI"
+								style="border: 0; width: 100%; height: 42px"
+								src="https://bandcamp.com/EmbeddedPlayer/track=1119740991/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+								seamless
+								><a
+									href="https://johnni-p.bandcamp.com/track/fall-out-boy-centuries-ninezero-cover"
+									>Fall Out Boy - Centuries (Ninezero Cover) by
+									Johnni-P『TLJ』</a
+								></iframe
+							>
+						</div>
+					</div>
+				</div>
 
-            <div class="audio-content reverse" id="demos-container-2">
-                <div class="audio-container">
-                    <div class="audio-info">
-                        <div class="audio-img">
-                            <img id="audio-img-1" src="assets/remix-demo-img.webp" alt="Remix demo image">
-                        </div>
-                        <div class="audio-title">
-                            <p>PIKASONIC & Tatsunoshin - Lockdown (Johnni-P Remix) [DEMO]</p>
-                        </div>
-                    </div>
+				<div class="audio-content reverse" id="demos-container-2">
+					<div class="audio-container">
+						<div class="audio-info">
+							<div class="audio-img">
+								<img
+									id="audio-img-1"
+									src="assets/remix-demo-img.webp"
+									alt="Remix demo image"
+								/>
+							</div>
+							<div class="audio-title">
+								<p>
+									Ariana Grande - Break Free (feat. Zedd) (Johnni​-​P Remix)
+								</p>
+							</div>
+						</div>
 
-                    <div class="audio-player">
-                        <audio class="audio-player-UI" controls crossorigin="anonymous" controlsList="nodownload nofullscreen">
+						<div class="audio-player">
+							<!-- <audio class="audio-player-UI" controls crossorigin="anonymous" controlsList="nodownload nofullscreen">
                             <source src="assets/remix-demo.mp3">
                           Your browser does not support the audio element.
-                        </audio>
-                    </div> 
-                </div>
-                <div class="content-text">
-                    <p><b class="title-name" id="remix-demo-name">Remix Demo<br><subtitle>&ndash;&nbsp; <b>Lockdown</b> by <b>PIKASONIC & Tatsunoshin</b>  &nbsp;&ndash;</subtitle></b></p>
-                    <p>And here's a short demo for one of my unreleased remixes</p>
-                </div>
-            </div>
-        </div>
+                        </audio> -->
+							<iframe
+								title="Ariana Grande - Break Free (feat. Zedd) (Johnni-P Remix)"
+								style="border: 0; width: 100%; height: 42px"
+								src="https://bandcamp.com/EmbeddedPlayer/track=2366191634/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+								seamless
+								><a
+									href="https://johnni-p.bandcamp.com/track/ariana-grande-break-free-feat-zedd-johnni-p-remix"
+									>Ariana Grande - Break Free (feat. Zedd) (Johnni-P Remix) by
+									Johnni-P『TLJ』</a
+								></iframe
+							>
+						</div>
+					</div>
+					<div class="content-text">
+						<p>
+							<b class="title-name" id="remix-demo-name"
+								>Remix Demo<br /><subtitle
+									>&ndash;&nbsp; <b>Break Free</b> by
+									<b>Ariana Grande (feat. Zedd)</b> &nbsp;&ndash;</subtitle
+								></b
+							>
+						</p>
+						<p>
+							And here's one of my remixes also released on YouTube. It was made
+							in around 3 weeks in total, although it took 2 months because I
+							wasn't always free at the time
+						</p>
+					</div>
+				</div>
+			</div>
 
-        <hr>
-        <div class="contacts-spacer"></div>
-        <div class="pc contacts-spacer"></div>
+			<hr />
+			<div class="contacts-spacer"></div>
+			<div class="pc contacts-spacer"></div>
 
-        <div class="spacer content">
-            <span id="contacts" class="offset-anchor"></span>
-            <h1>Contacts</h1>
-            <hr width="3%">
-            <div id="contact-container">
-                <div id="contact-links" class="content-text">
-                    <p>Wants to enquire about something? Reach me here!</p>
-                    <div class="contact-column">
-                        <a class="contact-div content-row" href="mailto:legendaryjohn2005+music@gmail.com">
-                            <img alt="Email logo" id="email-icon" class="contact-icon" src="assets/email-icon.webp">
-                            <p id="email-text" class="contact-text nav-btn">
-                                <span class="break-line">legendaryjohn2005</span><span class="break-line">+music@gmail.com</span>
-                            </p>
-                        </a>
-                        <div class="contact-div content-row btn" onclick="copyDiscordHandle()">
-                            <img alt="Discord logo" id="discord-icon" class="contact-icon btn" src="assets/discord-logo.webp">
-                            <p id="discord-text" class="contact-text nav-btn">@voca_johnni</p>
-                        </div>
-                    </div>
+			<div class="spacer content">
+				<span id="contacts" class="offset-anchor"></span>
+				<h1>Contacts</h1>
+				<hr width="3%" />
+				<div id="contact-container">
+					<div id="contact-links" class="content-text">
+						<p>Wants to enquire about something? Reach me here!</p>
+						<div class="contact-column">
+							<a
+								class="contact-div content-row"
+								href="mailto:legendaryjohn2005+music@gmail.com"
+							>
+								<img
+									alt="Email logo"
+									id="email-icon"
+									class="contact-icon"
+									src="assets/email-icon.webp"
+								/>
+								<p id="email-text" class="contact-text nav-btn">
+									<span class="break-line">legendaryjohn2005</span
+									><span class="break-line">+music@gmail.com</span>
+								</p>
+							</a>
+							<div
+								class="contact-div content-row btn"
+								onclick="copyDiscordHandle()"
+							>
+								<img
+									alt="Discord logo"
+									id="discord-icon"
+									class="contact-icon btn"
+									src="assets/discord-logo.webp"
+								/>
+								<p id="discord-text" class="contact-text nav-btn">
+									@voca_johnni
+								</p>
+							</div>
+						</div>
 
-                    <p>My bussiness card <b>(Carrd.co)</b></p>
-                    <div class="contact-column">
-                        <a class="contact-div content-row btn" href="https://johnni-p.carrd.co/" target="_blank">
-                            <img alt="Discord logo" id="carrd-icon" class="contact-icon btn" src="assets/carrd-logo.webp">
-                            <p id="carrd-text" class="contact-text nav-btn">
-                                <span class="no-break-line">johnni-p.carrd.co</span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="vr"></div>
-                <div id="social-links" class="content-text">
-                    <p>My social media and content links</p>
-                    <div class="contact-column">
-                        <a class="contact-div content-row btn" href="https://www.youtube.com/@johnni-p" target="_blank">
-                            <img alt="Discord logo" id="youtube-icon" class="contact-icon btn" src="assets/youtube_logo.webp">
-                            <p id="youtube-text" class="contact-text nav-btn">
-                                <span class="no-break-line">YouTube</span>
-                            </p>
-                        </a>
-                        <a class="contact-div content-row btn" href="https://soundcloud.com/thelegendaryjohn" target="_blank">
-                            <img alt="Discord logo" id="soundcloud-icon" class="contact-icon btn" src="assets/soundcloud-logo.webp">
-                            <p id="soundcloud-text" class="contact-text nav-btn">
-                                <span class="no-break-line">SoundCloud</span>
-                            </p>
-                        </a>
-                        <a class="contact-div content-row btn" href="https://johnni-p.bandcamp.com/" target="_blank">
-                            <img alt="Discord logo" id="bandcamp-icon" class="contact-icon btn" src="assets/bandcamp-logo.webp">
-                            <p id="bandcamp-text" class="contact-text nav-btn">
-                                <span class="no-break-line">Bandcamp</span>
-                            </p>
-                        </a>
-                        <a class="contact-div content-row btn" href="https://twitter.com/voca_johnni" target="_blank">
-                            <img alt="Discord logo" id="x-icon" class="contact-icon btn" src="assets/x-logo.webp">
-                            <p id="x-text" class="contact-text nav-btn">
-                                <span class="no-break-line">X (Twitter)</span>
-                            </p>
-                        </a>
-                        <a class="contact-div content-row btn" href="https://vocadb.net/Ar/114611" target="_blank">
-                            <img alt="Discord logo" id="vocadb-icon" class="contact-icon btn" src="assets/vocadb-logo.webp">
-                            <p id="vocadb-text" class="contact-text nav-btn">
-                                <span class="no-break-line">VocaDB</span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+						<p>My bussiness card <b>(Carrd.co)</b></p>
+						<div class="contact-column">
+							<a
+								class="contact-div content-row btn"
+								href="https://johnni-p.carrd.co/"
+								target="_blank"
+							>
+								<img
+									alt="Discord logo"
+									id="carrd-icon"
+									class="contact-icon btn"
+									src="assets/carrd-logo.webp"
+								/>
+								<p id="carrd-text" class="contact-text nav-btn">
+									<span class="no-break-line">johnni-p.carrd.co</span>
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="vr"></div>
+					<div id="social-links" class="content-text">
+						<p>My social media and content links</p>
+						<div class="contact-column">
+							<a
+								class="contact-div content-row btn"
+								href="https://www.youtube.com/@johnni-p"
+								target="_blank"
+							>
+								<img
+									alt="Discord logo"
+									id="youtube-icon"
+									class="contact-icon btn"
+									src="assets/youtube_logo.webp"
+								/>
+								<p id="youtube-text" class="contact-text nav-btn">
+									<span class="no-break-line">YouTube</span>
+								</p>
+							</a>
+							<a
+								class="contact-div content-row btn"
+								href="https://soundcloud.com/thelegendaryjohn"
+								target="_blank"
+							>
+								<img
+									alt="Discord logo"
+									id="soundcloud-icon"
+									class="contact-icon btn"
+									src="assets/soundcloud-logo.webp"
+								/>
+								<p id="soundcloud-text" class="contact-text nav-btn">
+									<span class="no-break-line">SoundCloud</span>
+								</p>
+							</a>
+							<a
+								class="contact-div content-row btn"
+								href="https://johnni-p.bandcamp.com/"
+								target="_blank"
+							>
+								<img
+									alt="Discord logo"
+									id="bandcamp-icon"
+									class="contact-icon btn"
+									src="assets/bandcamp-logo.webp"
+								/>
+								<p id="bandcamp-text" class="contact-text nav-btn">
+									<span class="no-break-line">Bandcamp</span>
+								</p>
+							</a>
+							<a
+								class="contact-div content-row btn"
+								href="https://twitter.com/voca_johnni"
+								target="_blank"
+							>
+								<img
+									alt="Discord logo"
+									id="x-icon"
+									class="contact-icon btn"
+									src="assets/x-logo.webp"
+								/>
+								<p id="x-text" class="contact-text nav-btn">
+									<span class="no-break-line">X (Twitter)</span>
+								</p>
+							</a>
+							<a
+								class="contact-div content-row btn"
+								href="https://vocadb.net/Ar/114611"
+								target="_blank"
+							>
+								<img
+									alt="Discord logo"
+									id="vocadb-icon"
+									class="contact-icon btn"
+									src="assets/vocadb-logo.webp"
+								/>
+								<p id="vocadb-text" class="contact-text nav-btn">
+									<span class="no-break-line">VocaDB</span>
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="contacts-spacer"></div>
-        <div class="pc contacts-spacer"></div>
-        <div class="pc contacts-spacer"></div>
-    </main>
+			<div class="contacts-spacer"></div>
+			<div class="pc contacts-spacer"></div>
+			<div class="pc contacts-spacer"></div>
+		</main>
 
-    <footer>
-        <h3 class="footer-padding">Copyright © 2024 Johnni-P &nbsp;&nbsp; | &nbsp;&nbsp; Made with lots of love! ❤️ ^&omega;^</h3>
-        <h3 class="footer-padding">"Johnni-P" logo and private webpage content is the interlectual property of Johnny, and shall not be sold, reproduced, or redistributed without the copyright holder's written permission</h3>
-    </footer>
-</body>
+		<footer>
+			<h3 class="footer-padding">
+				Copyright © 2024 Johnni-P &nbsp;&nbsp; | &nbsp;&nbsp; Made with lots of
+				love! ❤️ ^&omega;^
+			</h3>
+			<h3 class="footer-padding">
+				"Johnni-P" logo and private webpage content is the interlectual property
+				of Johnny, and shall not be sold, reproduced, or redistributed without
+				the copyright holder's written permission
+			</h3>
+		</footer>
+	</body>
 </html>

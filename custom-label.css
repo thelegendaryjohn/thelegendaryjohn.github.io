@@ -1,100 +1,100 @@
 /* Custom text labels */
 .title-name {
-    font-style: italic;
-    font-size: 27px;
+	font-style: italic;
+	font-size: 27px;
 }
 
 .title-name subtitle {
-    font-weight: lighter;
-    font-size: 22px;
+	font-weight: lighter;
+	font-size: 22px;
 }
 
 #synthv-name {
-    color: #79d825; 
+	color: #79d825;
 }
 
 #FL-name {
-    color: #fa9424;
+	color: #fa9424;
 }
 
 #cover-demo-name {
-    color: #79d825;
+	color: #79d825;
 }
 
 #remix-demo-name {
-    color: #ff4747;
+	color: #ff4747;
 }
 
 /* Custom label styling */
 /* Email */
 #email-text {
-    color: #fa2424;
+	color: #fa2424;
 }
 
 #email-text:hover {
-    color: #fa242488;
+	color: #fa242488;
 }
 
 /* Discord */
 #discord-text {
-    color: #637cd7;
+	color: #637cd7;
 }
 
 #discord-text:hover {
-    color: #637cd788;
+	color: #637cd788;
 }
 
 /* Carrd */
 #carrd-text {
-    color: #6e67a8;
+	color: #6e67a8;
 }
 
 #carrd-text:hover {
-    color: #4a6db3a3;
+	color: #4a6db3a3;
 }
 
 /* YouTube */
 #youtube-text {
-    color: #ff0000;
+	color: #ff0000;
 }
 
 #youtube-text:hover {
-    transition: 0.2s;
-    color: #ff000088;
+	transition: 0.2s;
+	color: #ff000088;
 }
 
 /* SoundCloud */
 #soundcloud-text {
-    color: #ff5500;
+	color: #ff5500;
 }
 
 #soundcloud-text:hover {
-    color: #ff550088;
+	color: #ff550088;
 }
 
 /* Bandcamp */
 #bandcamp-text {
-    color: #1da0c3;
+	color: #1da0c3;
 }
 
 #bandcamp-text:hover {
-    color: #1da0c388;
+	color: #1da0c388;
 }
 
 /* X */
 #x-text {
-    color: #0f1419;
+	color: #0f1419;
 }
 
 #x-text:hover {
-    color: #0f141988;
+	color: #0f141988;
 }
 
 /* VocaDB */
 #vocadb-text {
-    color: #3e73c9;
+	color: #3e73c9;
 }
 
 #vocadb-text:hover {
-    color: #3e73c988;
+	color: #3e73c988;
 }
