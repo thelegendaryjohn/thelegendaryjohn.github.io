@@ -1,15 +1,5 @@
 let navbarClosed = true;
 
-// const menuBtn = document.getElementById('menu-btn');
-// const animateElements = menuBtn.getElementsByTagName("animate");
-
-// // Trigger the animations programmatically
-// menuBtn.addEventListener('click', function() {
-//   for (let i = 0; i < animateElements.length; i++) {
-//     animateElements[i].beginElement();
-//   }
-// });
-
 const openAnim = () => {
     document.querySelector("#start").beginElement();
     navbarClosed = false;
