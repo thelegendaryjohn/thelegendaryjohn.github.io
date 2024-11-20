@@ -292,8 +292,6 @@ footer {
 }
 
 footer h3 {
-	display: flex;
-	justify-content: center;
 	margin: 0;
 	font-size: 12px;
 	letter-spacing: 0.5px;
