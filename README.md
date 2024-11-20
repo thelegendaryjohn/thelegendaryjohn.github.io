@@ -38,7 +38,7 @@ For any additional tools or build processes, consult the relevant documentation 
 ## Project Structure
 
 ```bash
-thelegendaryjohn.github.io/
+/
 ├── assets/              # Media and graphical assets
 ├── css/                 # CSS stylesheets
 ├── scripts/             # JavaScript files
