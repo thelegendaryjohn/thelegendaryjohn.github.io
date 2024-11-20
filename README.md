@@ -5,8 +5,6 @@
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://johnni-p.vercel.app)
 [![Website status](https://img.shields.io/website-online-offline-green-red/https/johnni-p.vercel.app.svg)](https://johnni-p.vercel.app)
 
-![License](https://img.shields.io/github/license/thelegendaryjohn/thelegendaryjohn.github.io.svg)
-
 # Johnni-P | Hobbyist Vocal Synth Cover Artist
 
 ![Johnni-P banner](/assets/github-banner.webp)
