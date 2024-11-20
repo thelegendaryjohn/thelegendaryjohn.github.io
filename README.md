@@ -52,4 +52,4 @@ thelegendaryjohn.github.io/
 ## Licenses
 
 - **Code**: Licensed under the MIT License. See [`LICENSE`](/LICENSE) for details.
-- **Assets**: Assets (images, sound files, etc.) are licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/), with some exceptions. See [`ASSETS_LICENSE.md`](/ASSETS_LICENSE.md) for details.
+- **Assets**: Assets (images, sound files, etc.) are licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/), with some exceptions. See [`ASSETS_LICENSE`](/ASSETS_LICENSE) for details.
